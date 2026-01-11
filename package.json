@@ -1,0 +1,21 @@
+{
+  "name": "qumail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "dev": "concurrently \"tsc -w\" \"electron .\""
+
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^25.0.6",
+    "electron": "^39.2.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "concurrently": "^9.0.0"
+  },
+  "private": true
+}
